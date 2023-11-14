@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      
+      body {
+  background-color: red;
+  margin:0;
+  top:0;
+
+}
+.box{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    border: 40px solid black;
+    position: relative;
+    margin-left: 30%;
+    margin-top: 8%;
+}
+
+.box1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: 20px solid black;
+  position: absolute;
+  background-color: black;
+  animation-name: roller;
+  animation-iteration-count: infinite;
+  animation-duration: 3s; /* Set to a specific duration */
+  animation-direction: normal;
+  position: absolute;
+}
+
+@keyframes roller {
+  from {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 80%;}
+
+    50%{
+        left: 80%;
+        top: 80%;
+    }
+    75%{
+     right:100%;
+     top: 80%;
+      left:0;
+
+    }
+    100%{
+        top:0;
+        left:0;
+    }
+}
+  
+
+  
+  
+
+  </style>
+</head>
+<body>
+    <div class="box">
+  <div class ="box1"></div>
+  </div>
+</body>
+</html>
